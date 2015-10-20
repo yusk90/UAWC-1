@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="ua">
+    <meta charset="UTF-8">
+    <title>Калькулятор індексу маси тіла (ІМТ)</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="input-data">
+            <p><strong>Вхідні параметри:</strong></p>
+            <div class="input-data__field">
+                <label class="input-data__label" for="height">Зріст: </label>
+                    <input id="height" class="input-data__input" type="number"
+                           min="1" max="300" value="175"/>
+                <strong>см</strong>
+            </div>
+            <div class="input-data__field">
+                <label class="input-data__label" for="weight">Вага: </label>
+                    <input id="weight" class="input-data__input" type="number"
+                           min="1" max="500" value="75"/>
+                <strong>кг</strong>
+            </div>
+            <button id="calculate" class="input-data__button">Розрахувати</button>
+        </div>
+        <p><strong>Результат:</strong><br />
+        Ваш індекс маси тіла: <span id="result" class="result"></span></p>
+
+        <table id="table" class="table">
+            <thead class="table__head">
+                <tr class="table__row">
+                    <td class="table__cell">Індекс маси тіла</td>
+                    <td class="table__cell">Класифікація</td>
+                </tr>
+            </thead>
+            <tbody class="table__body">
+                <tr id="result1" class="table__row">
+                    <td class="table__cell">менше 18,5</td>
+                    <td class="table__cell">Недостатня маса</td>
+                </tr>
+                <tr id="result2" class="table__row">
+                    <td class="table__cell">18,5—24,9</td>
+                    <td class="table__cell">Норма</td>
+                </tr>
+                <tr id="result3" class="table__row">
+                    <td class="table__cell">25,0—29,9</td>
+                    <td class="table__cell">Передожиріння (гладкість)</td>
+                </tr>
+                <tr id="result4" class="table__row">
+                    <td class="table__cell">30,0—34,9</td>
+                    <td class="table__cell">Ожиріння I ступеня</td>
+                </tr>
+                <tr id="result5" class="table__row">
+                    <td class="table__cell">35,0—39,9</td>
+                    <td class="table__cell">Ожиріння II ступеня</td>
+                </tr>
+                <tr id="result6" class="table__row">
+                    <td class="table__cell">більше 40,0</td>
+                    <td class="table__cell">Ожиріння III ступеня</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

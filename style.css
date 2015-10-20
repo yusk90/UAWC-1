@@ -1,0 +1,43 @@
+.container {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.input-data__field {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-data__label {
+    float: left;
+    min-width: 50px;
+}
+.input-data__input {
+    width: 60px;
+}
+.table {
+    width: 100%;
+    border: 1px solid #cacaca;
+    border-collapse: collapse;
+}
+.table__head {
+    background: #757575;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.table__cell {
+    border: 1px solid #cacaca;
+    padding: 9px 20px;
+}
+.table__cell:first-child {
+    text-align: center;
+}
+.table__row--bad {
+    background: rgba(255, 0, 0, 0.2);
+}
+.table__row--good {
+    background: rgba(0, 255, 0, 0.2);
+}
+.result {
+    font-weight: bold;
+}
